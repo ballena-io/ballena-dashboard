@@ -10,11 +10,11 @@ export default function NavBar() {
 	const { t } = useTranslation();
 	return (
 		<Metrics>
-			<GlobalTvlMetric link="https://app.beefy.finance/" />
+			<GlobalTvlMetric link="https://app.ballena.io/" />
 			<GenericMetric
 				name={t("Metric-ActiveVaults")}
 				metric="vaultCount"
-				link="https://app.beefy.finance/"
+				link="https://app.ballena.io/"
 			/>
 			<GenericMetric
 				name={t("Metric-DailyRewards")}

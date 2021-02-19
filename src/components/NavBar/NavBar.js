@@ -13,11 +13,11 @@ export default function NavBar() {
     return (
 		<Nav>
 			<NavSection>
-				<NavLogo src='/img/beefy.svg' />
-        <NavName href='https://dashboard.beefy.finance'>dashboard</NavName>
+				<NavLogo src='/img/ballena.svg' />
+        <NavName href='https://dashboard.ballena.io'>dashboard</NavName>
 			</NavSection>
 			<NavSection>
-				<NavBtn href='https://app.beefy.finance' target="_blank" rel="noreferrer">{t("LaunchApp")}</NavBtn>
+				<NavBtn href='https://app.ballena.io' target="_blank" rel="noreferrer">{t("LaunchApp")}</NavBtn>
 			</NavSection>
 		</Nav>
 	);

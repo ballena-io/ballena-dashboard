@@ -2,19 +2,19 @@ import axios from 'axios';
 import { Client } from '@bandprotocol/bandchain.js';
 
 const endpoints = {
-  bakery:    'https://api.beefy.finance/bakery/price',
-  bakeryLp:  'https://api.beefy.finance/bakery/lps',
+  bakery:    'https://api.ballena.io/bakery/price',
+  bakeryLp:  'https://api.ballena.io/bakery/lps',
   bandchain: 'https://poa-api.bandchain.org',
-  bdollarLp: 'https://api.beefy.finance/bdollar/lps',
+  bdollarLp: 'https://api.ballena.io/bdollar/lps',
   coingecko: 'https://api.coingecko.com/api/v3/simple/price',
-  jetfuelLp: 'https://api.beefy.finance/jetfuel/lps',
-  kebabLp:   'https://api.beefy.finance/kebab/lps',
-  monsterLP: 'https://api.beefy.finance/monster/lps',
-  narwhalLp: 'https://api.beefy.finance/narwhal/lps',
-  pancake:   'https://api.beefy.finance/pancake/price',
-  pancakeLp: 'https://api.beefy.finance/pancake/lps',
-  thugs:     'https://api.beefy.finance/thugs/tickers',
-  thugsLp:   'https://api.beefy.finance/thugs/lps',
+  jetfuelLp: 'https://api.ballena.io/jetfuel/lps',
+  kebabLp:   'https://api.ballena.io/kebab/lps',
+  monsterLP: 'https://api.ballena.io/monster/lps',
+  narwhalLp: 'https://api.ballena.io/narwhal/lps',
+  pancake:   'https://api.ballena.io/pancake/price',
+  pancakeLp: 'https://api.ballena.io/pancake/lps',
+  thugs:     'https://api.ballena.io/thugs/tickers',
+  thugsLp:   'https://api.ballena.io/thugs/lps',
 };
 
 const CACHE_TIMEOUT = 30 * 60 * 1000;

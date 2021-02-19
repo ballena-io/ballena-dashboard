@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const holdersEndpoint = "https://api.beefy.finance/holders"
+const holdersEndpoint = "https://api.ballena.io/holders"
 
 const getHolders = async () => {
   try {
