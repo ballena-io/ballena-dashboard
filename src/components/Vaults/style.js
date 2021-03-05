@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Palette } from '../../constants/Palette';
+import { Palette } from "../../constants/Palette";
 
 const TableContainer = styled.nav`
   position: relative;
@@ -19,21 +19,21 @@ const TableHead = styled.div`
   display: table-header-group;
   position: sticky;
   top: 0;
-  background-color: ${Palette.green[0]};
-  color: ${Palette.white};
+  background-color: ${Palette.ACCENT_BLUE};
+  color: ${Palette.DARK_BLUE};
   font-weight: 700;
 `;
 
 const TableBody = styled.div`
   display: table-row-group;
-  color: ${Palette.black};
+  color: ${Palette.DARK_BLUE};
 `;
 
 const TableRow = styled.div`
   display: table-row;
 
   ${TableBody} > &:hover {
-    background-color: ${Palette.bg};
+    background-color: ${Palette.LIGHT_BLUE};
   }
 `;
 
@@ -45,7 +45,7 @@ const TableCell = styled.div`
 
 const ContractAddress = styled.a`
   text-decoration: none;
-  color: ${Palette.black};
+  color: ${Palette.DARK_BLUE};
 
   &:hover {
     text-decoration: underline;
@@ -64,5 +64,5 @@ export {
   TableRow,
   TableCell,
   ContractAddress,
-  ContractTVL
+  ContractTVL,
 };
