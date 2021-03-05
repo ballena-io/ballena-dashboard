@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Nav, NavBtn, NavLogo, NavName, NavSection } from './style';
+import { Nav, NavBtn, NavBtnContainer, NavLogo, NavName, NavSection } from './style';
 
 export default function NavBar() {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ export default function NavBar() {
       </NavSection>
       <NavSection>
         <NavBtn href="https://app.ballena.io" target="_blank" rel="noreferrer">
-          {t("LaunchApp")}
+          <NavBtnContainer>{t("LaunchApp")}</NavBtnContainer>
         </NavBtn>
       </NavSection>
     </Nav>
