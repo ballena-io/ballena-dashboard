@@ -14,26 +14,27 @@ const Nav = styled.nav`
 
 const NavSection = styled.div`
   display: flex;
-  align-items: self-end;
+  align-items: center;
 `;
 
 const NavLogo = styled.img`
   width: 4rem;
   min-height: 3rem;
-  margin-right: 2rem;
+  margin-right: 16px;
 `;
 
 const NavItem = styled.div`
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 24px;
   text-decoration: none;
+  font-family: "dosis", sans-serif;
 `;
 
 const NavName = styled(NavItem)``;
 
 const NavBtn = styled.a`
   cursor: pointer;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   background: ${Palette.green[0]};
   color: ${Palette.white};
   border-radius: 2rem;
@@ -51,11 +52,4 @@ const NavBtn = styled.a`
   }
 `;
 
-export {
-  Nav,
-  NavSection,
-  NavItem,
-  NavLogo,
-  NavName,
-  NavBtn
-};
+export { Nav, NavSection, NavItem, NavLogo, NavName, NavBtn };

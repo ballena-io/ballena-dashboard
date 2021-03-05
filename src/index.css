@@ -11,18 +11,38 @@ body {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width:  768px) { html { font-size: 12px; } }
-@media only screen and (min-width:  769px) { html { font-size: 13px; } }
-@media only screen and (min-width: 1024px) { html { font-size: 14px; } }
-@media only screen and (min-width: 1200px) { html { font-size: 15px; } }
-@media only screen and (min-width: 1400px) { html { font-size: 16px; } }
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 body {
-  background-color: #F9F3EB;
+  background-color: #f9f3eb;
 }
 
 * {
-  font-family: 'proxima-nova', sans-serif;
+  font-family: "Lato", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
