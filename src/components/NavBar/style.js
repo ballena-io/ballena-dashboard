@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Palette } from '../../constants/Palette';
+import { Palette } from "../../constants/Palette";
 
 const Nav = styled.nav`
   display: flex;
@@ -14,48 +14,48 @@ const Nav = styled.nav`
 
 const NavSection = styled.div`
   display: flex;
-  align-items: self-end;
+  align-items: center;
 `;
 
 const NavLogo = styled.img`
   width: 4rem;
   min-height: 3rem;
-  margin-right: 2rem;
+  margin-right: 16px;
 `;
 
 const NavItem = styled.div`
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 24px;
   text-decoration: none;
+  font-family: "dosis", sans-serif;
 `;
 
 const NavName = styled(NavItem)``;
 
+const NavBtnContainer = styled.div`
+  padding: 10px 1.5rem;
+  border-radius: 4px;
+`;
+
 const NavBtn = styled.a`
+  background-color: ${Palette.ACCENT_BLUE};
+  color: ${Palette.DARK_BLUE};
+  border-radius: 4px;
   cursor: pointer;
-  padding: .5rem 1.5rem;
-  background: ${Palette.green[0]};
-  color: ${Palette.white};
-  border-radius: 2rem;
-  font-weight: 700;
-  font-size: 1rem;
+  min-width: 92px,
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none !important;
   outline: none;
 
   &:hover {
-    background-color: ${Palette.green[1]};
+    background-color: ${Palette.DARK_BLUE};
+    color: ${Palette.ACCENT_BLUE}
   }
 
   &:active {
-    background-color: ${Palette.black};
+    background-color: ${Palette.DARK_BLUE};
   }
 `;
 
-export {
-  Nav,
-  NavSection,
-  NavItem,
-  NavLogo,
-  NavName,
-  NavBtn
-};
+export { Nav, NavSection, NavItem, NavLogo, NavName, NavBtn, NavBtnContainer };
